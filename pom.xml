@@ -35,11 +35,11 @@
                 <version>2.2.0</version>
                 <configuration>
                     <schemaVersion>v2</schemaVersion>
-                    <subscriptionId>9fd648eb-ad74-42e9-aacc-7e0a6cb2deb8</subscriptionId>
+                    <subscriptionId>-9fd648eb-ad74-42e9-aacc-7e0a6cb2deb8</subscriptionId>
                     <resourceGroup>test</resourceGroup>
-                    <appName>yiTest001</appName>
+                    <appName>yitest001</appName>
                     <pricingTier>P1v2</pricingTier>
-                    <region>chinanorth</region>
+                    <region>chinanorth2</region>
                     <runtime>
                         <os>Linux</os>
                         <javaVersion>Java 8</javaVersion>
@@ -54,6 +54,37 @@
                                 </includes>
                             </resource>
                         </resources>
+                        <publishData>
+                            <publishProfile profileName="yitest001 - Web Deploy" publishMethod="MSDeploy"
+                                            publishUrl="yitest001.scm.chinacloudsites.cn:443" msdeploySite="yitest001"
+                                            userName="$yitest001"
+                                            userPWD="vbe8pxEE7psXPfaSfMhoae0E9CdrFqW7Yulg8EalLr8vd8zahaEDlNx0yM64"
+                                            destinationAppUrl="http://yitest001.chinacloudsites.cn"
+                                            SQLServerDBConnectionString="" mySQLDBConnectionString=""
+                                            hostingProviderForumLink=""
+                                            controlPanelLink="https://manage.windowsazure.cn" webSystem="WebSites">
+                                <databases/>
+                            </publishProfile>
+                            <publishProfile profileName="yitest001 - FTP" publishMethod="FTP"
+                                            publishUrl="ftp://cnws-prod-bjs20-003.ftp.chinacloudsites.chinacloudapi.cn/site/wwwroot"
+                                            ftpPassiveMode="True" userName="yitest001\$yitest001"
+                                            userPWD="vbe8pxEE7psXPfaSfMhoae0E9CdrFqW7Yulg8EalLr8vd8zahaEDlNx0yM64"
+                                            destinationAppUrl="http://yitest001.chinacloudsites.cn"
+                                            SQLServerDBConnectionString="" mySQLDBConnectionString=""
+                                            hostingProviderForumLink=""
+                                            controlPanelLink="https://manage.windowsazure.cn" webSystem="WebSites">
+                                <databases/>
+                            </publishProfile>
+                            <publishProfile profileName="yitest001 - Zip Deploy" publishMethod="ZipDeploy"
+                                            publishUrl="yitest001.scm.chinacloudsites.cn:443" userName="$yitest001"
+                                            userPWD="vbe8pxEE7psXPfaSfMhoae0E9CdrFqW7Yulg8EalLr8vd8zahaEDlNx0yM64"
+                                            destinationAppUrl="http://yitest001.chinacloudsites.cn"
+                                            SQLServerDBConnectionString="" mySQLDBConnectionString=""
+                                            hostingProviderForumLink=""
+                                            controlPanelLink="https://manage.windowsazure.cn" webSystem="WebSites">
+                                <databases/>
+                            </publishProfile>
+                        </publishData>
                     </deployment>
                 </configuration>
             </plugin>
